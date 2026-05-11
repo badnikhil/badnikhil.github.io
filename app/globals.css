@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-bg-deep: #0a0a0f;
+    --color-bg-surface: #111118;
+    --color-bg-raised: #16161f;
+    --color-border-subtle: #1e1e2e;
+    --color-border-bright: #2d2d42;
+    --color-text-primary: #e2e8f0;
+    --color-text-secondary: #8892a4;
+    --color-text-muted: #4a5568;
+    --color-flutter: #00b4d8;
+    --color-systems: #39ff14;
+    --color-cuda: #76b900;
+    --color-gold: #f59e0b;
+    --color-purple: #a78bfa;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg-deep);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans), Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* CRT Scanlines Overlay */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, 0.15) 50%,
+        rgba(0, 0, 0, 0.15)
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+}
+
+/* CRT Subtle Flicker and Subpixel pattern */
+@keyframes crtFlicker {
+    0% {
+        opacity: 0.95;
+    }
+    5% {
+        opacity: 0.85;
+    }
+    10% {
+        opacity: 0.95;
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.03),
+        rgba(0, 255, 0, 0.01),
+        rgba(0, 0, 255, 0.03)
+    );
+    z-index: 9998;
+    background-size: 3px 100%;
+    pointer-events: none;
+    animation: crtFlicker 0.15s infinite;
+    opacity: 0.3;
+}
+
+/* Terminal/Blocky scrollbar */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background: var(--color-bg-deep);
+    border-left: 1px solid var(--color-border-subtle);
+}
+::-webkit-scrollbar-track {
+    background: var(--color-bg-deep);
+    border-left: 1px solid var(--color-border-subtle);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-border-bright);
+    border: 2px solid var(--color-bg-deep);
+    border-radius: 0px; /* Blocky, non-rounded terminal style */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-systems);
+    border: 2px solid var(--color-bg-deep);
+}
+::-webkit-scrollbar-corner {
+    background: var(--color-bg-deep);
+}
+
+/* Text selection with phosphor glow */
+::selection {
+    background: rgba(57, 255, 20, 0.25);
+    color: #e2e8f0;
+    text-shadow: 0 0 8px var(--color-systems);
+}
+
+/* Focus management */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+:focus-visible {
+    outline: 2px solid var(--color-systems);
+    outline-offset: 2px;
+    border-radius: 0px; /* Terminal blocky outline */
+}
+
+/* Particle canvas — always behind content */
+canvas.particle-canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Gradient text utility */
+@layer utilities {
+    .text-gradient-flutter {
+        background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .text-gradient-systems {
+        background: linear-gradient(135deg, #39ff14 0%, #1a7a00 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .text-gradient-gold {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .text-gradient-hero {
+        background: linear-gradient(135deg, #e2e8f0 0%, #8892a4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .border-glow-flutter {
+        border-color: rgba(0, 180, 216, 0.5);
+        box-shadow: 0 0 20px rgba(0, 180, 216, 0.15);
+    }
+    .border-glow-systems {
+        border-color: rgba(57, 255, 20, 0.5);
+        box-shadow: 0 0 20px rgba(57, 255, 20, 0.15);
+    }
+    .border-glow-cuda {
+        border-color: rgba(118, 185, 0, 0.5);
+        box-shadow: 0 0 20px rgba(118, 185, 0, 0.15);
+    }
+    .border-glow-gold {
+        border-color: rgba(245, 158, 11, 0.5);
+        box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+    }
+    .border-glow-purple {
+        border-color: rgba(167, 139, 250, 0.5);
+        box-shadow: 0 0 20px rgba(167, 139, 250, 0.15);
+    }
+}
