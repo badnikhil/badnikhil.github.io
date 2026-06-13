@@ -94,13 +94,13 @@ export const PROJECTS: Project[] = [
     name: "bindbc-cuda",
     subtitle: "CUDA Driver Bindings for D Language",
     description:
-      "Created modern CUDA driver API bindings for D from scratch, replacing the deprecated derelict-cuda package. The maintainer didn't know the dependency was deprecated — I found it, reported it, and built the replacement.",
-    keystat: "Joining the official bindbc GitHub org",
+      "Created modern CUDA driver API bindings for D from scratch, replacing the deprecated derelict-cuda package. Successfully migrated dcompute to this new backend (PR #96) and became the official author/maintainer.",
+    keystat: "Official Author & Maintainer",
     emoji: "🔗",
     categories: ["systems", "opensource"],
     tags: ["D Language", "CUDA", "Open Source", "Bindings", "bindbc"],
     links: {
-      github: "https://github.com/badnikhil",
+      github: "https://github.com/bindbc/bindbc-cuda",
     },
     featured: false,
   },

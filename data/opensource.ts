@@ -23,6 +23,37 @@ export interface OSContribution {
 
 export const OS_CONTRIBUTIONS: OSContribution[] = [
   {
+    id: "ldc",
+    emoji: "🐉",
+    org: "ldc-developers",
+    repo: "ldc",
+    repoUrl: "https://github.com/ldc-developers/ldc",
+    headline: "Core compiler contributions to LDC (LLVM D Compiler)",
+    description: "Contributed fixes and features to the DCompute component, addressing semantic compiler crashes, AST traversal bugs, and implementing native PTX embedding for seamless kernel injection.",
+    prs: [
+      {
+        number: 5140,
+        title: "Fix DCompute AST traversal and implement native PTX embedding",
+        stats: "Open",
+        url: "https://github.com/ldc-developers/ldc/pull/5140",
+      },
+      {
+        number: 5142,
+        title: "Skip host-side template instantiations during semantic analysis",
+        stats: "Open",
+        url: "https://github.com/ldc-developers/ldc/pull/5142",
+      },
+      {
+        number: 5143,
+        title: "Fix semantic compiler crash on indirect calls",
+        stats: "Merged",
+        url: "https://github.com/ldc-developers/ldc/pull/5143",
+      }
+    ],
+    accent: "systems",
+    tags: ["LLVM", "D Language", "Compiler", "PTX"],
+  },
+  {
     id: "apidash",
     emoji: "🔷",
     org: "foss42",
@@ -31,7 +62,7 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     stars: "3,000+",
     headline: "Major architectural contributions across the entire codebase",
     description:
-      "Multiple large PRs spanning core architecture refactoring, multi-value parameter support, pure-Dart decoupling, OAuth2 abstraction, and model migration. Also selected as GSoC 2026 contributor — mentors personally approached me.",
+      "Multiple large PRs spanning core architecture refactoring, multi-value parameter support, pure-Dart decoupling, OAuth2 abstraction, and model migration. Also selected as GSoC 2026 contributor /",
     prs: [
       {
         number: 681,
@@ -59,12 +90,12 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
   {
     id: "bindbc-cuda",
     emoji: "🟢",
-    org: "bindbc (incoming)",
+    org: "bindbc",
     repo: "bindbc-cuda",
-    repoUrl: "https://github.com/badnikhil",
-    headline: "Created CUDA driver bindings for D from scratch",
+    repoUrl: "https://github.com/badnikhil/bindbc-cuda",
+    headline: "Official Author & Maintainer of CUDA bindings for D",
     description:
-      "While implementing unified memory, I needed cuMemPrefetchAsync (introduced in CUDA 8), but found our bindings (derelict-cuda) were stuck on CUDA 6.5 and deprecated. The maintainer didn't realize this until I brought it up. I then built bindbc-cuda from scratch as a modern replacement.",
+      "While implementing unified memory, I needed cuMemPrefetchAsync, but found our bindings (derelict-cuda) were deprecated. I built bindbc-cuda from scratch as a modern replacement. Now I am the official author and maintainer.",
     highlight:
       "so I din't realise we were still using derelict for the cuda bindings... It might be worth trying to create a cuda binding using bind-bc as the base — Nicholas Wilson",
     accent: "cuda",
@@ -77,9 +108,9 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     org: "libmir",
     repo: "dcompute",
     repoUrl: "https://github.com/libmir/dcompute",
-    headline: "Unified CUDA memory support",
+    headline: "Migrated CUDA Backend to BindBC & Unified Memory",
     description:
-      "Worked on adding unified CUDA memory support in dcompute. Finding that cuMemPrefetchAsync was missing because the underlying derelict bindings were outdated sparked the creation of bindbc-cuda to bring the D ecosystem up to date.",
+      "Worked on adding unified CUDA memory support (UnifiedBuffer!T) in dcompute. Following the creation of bindbc-cuda, I successfully migrated the entire dcompute CUDA driver backend from derelict to bindbc (PR #96).",
     accent: "cuda",
     tags: ["D Language", "CUDA", "GPU", "Unified Memory"],
   },
