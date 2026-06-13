@@ -62,25 +62,31 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     stars: "3,000+",
     headline: "Major architectural contributions across the entire codebase",
     description:
-      "Multiple large PRs spanning core architecture refactoring, multi-value parameter support, pure-Dart decoupling, OAuth2 abstraction, and model migration. Also selected as GSoC 2026 contributor /",
+      "Multiple large PRs spanning core architecture refactoring, CLI implementation, multi-value parameter support, WebSockets, pure-Dart decoupling, and model migrations. Also selected as GSoC 2026 contributor.",
     prs: [
       {
-        number: 681,
-        title: "Multi-value query parameter support",
-        stats: "47 commits · 3,506 additions · 72 files changed",
-        url: "https://github.com/foss42/apidash/pull/681",
+        number: 1660,
+        title: "PoC : Apidash CLI implementation",
+        stats: "Open",
+        url: "https://github.com/foss42/apidash/pull/1660",
       },
       {
-        number: 1637,
-        title: "Pure-Dart refactor + OAuth2 abstraction layer",
-        stats: "110 additions · 321 deletions · 25 files changed",
-        url: "https://github.com/foss42/apidash/pull/1637",
+        number: 1694,
+        title: "Ws (WebSockets Support)",
+        stats: "Open",
+        url: "https://github.com/foss42/apidash/pull/1694",
       },
       {
-        number: 1644,
-        title: "Migrate models to Freezed v3",
-        stats: "In review",
-        url: "https://github.com/foss42/apidash/pull/1644",
+        number: 1692,
+        title: "Requestmodel refactor",
+        stats: "Open",
+        url: "https://github.com/foss42/apidash/pull/1692",
+      },
+      {
+        number: 1678,
+        title: "sniff magic bytes for correct previewer",
+        stats: "Open",
+        url: "https://github.com/foss42/apidash/pull/1678",
       },
     ],
     accent: "flutter",
@@ -110,8 +116,66 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     repoUrl: "https://github.com/libmir/dcompute",
     headline: "Migrated CUDA Backend to BindBC & Unified Memory",
     description:
-      "Worked on adding unified CUDA memory support (UnifiedBuffer!T) in dcompute. Following the creation of bindbc-cuda, I successfully migrated the entire dcompute CUDA driver backend from derelict to bindbc (PR #96).",
+      "Worked on adding unified CUDA memory support (UnifiedBuffer!T) in dcompute. Following the creation of bindbc-cuda, I successfully migrated the entire dcompute CUDA driver backend from derelict to bindbc. Also implemented Native PTX embeddings.",
     accent: "cuda",
     tags: ["D Language", "CUDA", "GPU", "Unified Memory"],
+    prs: [
+      {
+        number: 96,
+        title: "Migrate CUDA Driver Backend from Derelict to BindBC",
+        stats: "Merged",
+        url: "https://github.com/libmir/dcompute/pull/96",
+      },
+      {
+        number: 101,
+        title: "Add UnifiedBuffer!T for CUDA Unified Memory",
+        stats: "Merged",
+        url: "https://github.com/libmir/dcompute/pull/101",
+      },
+      {
+        number: 102,
+        title: "Kernel embeddings",
+        stats: "Merged",
+        url: "https://github.com/libmir/dcompute/pull/102",
+      }
+    ]
+  },
+  {
+    id: "phobos",
+    emoji: "📚",
+    org: "dlang",
+    repo: "phobos",
+    repoUrl: "https://github.com/dlang/phobos",
+    headline: "Contributions to the D standard library",
+    description: "Contributed fixes to the D standard library.",
+    prs: [
+      {
+        number: 8900,
+        title: "fixed some typos",
+        stats: "Merged",
+        url: "https://github.com/dlang/phobos/pull/8900",
+      }
+    ],
+    accent: "systems",
+    tags: ["D Language", "Standard Library", "Documentation"],
+  },
+  {
+    id: "awesome-os",
+    emoji: "💻",
+    org: "jubalh",
+    repo: "awesome-os",
+    repoUrl: "https://github.com/jubalh/awesome-os",
+    headline: "Added myOS to the curated list of awesome OS projects",
+    description: "Contributed to the awesome-os repository by adding my custom operating system project.",
+    prs: [
+      {
+        number: 400,
+        title: "Added myOS",
+        stats: "Merged",
+        url: "https://github.com/jubalh/awesome-os/pull/400",
+      }
+    ],
+    accent: "systems",
+    tags: ["OS Dev", "Awesome List", "Open Source"],
   },
 ];
