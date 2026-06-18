@@ -21,10 +21,10 @@ export const PROJECTS: Project[] = [
   {
     id: "the-todo",
     name: "The Todo",
-    subtitle: "Enterprise Microservice Architecture",
+    subtitle: "Distributed Task Orchestration Platform",
     description:
-      "An enterprise-grade, distributed microservice architecture featuring complete OpenTelemetry observability, Redis caching, and an SSL-secured Nginx reverse proxy on a Google Cloud ARM VM.",
-    keystat: "Complete Observability Stack",
+      "An enterprise-grade, event-driven distributed microservice architecture. Features real-time presence sync via WebSockets, background workers (Celery/RabbitMQ), and a robust observability stack (OpenTelemetry, Loki, Tempo, Prometheus, Grafana). Fully containerized with Docker, automated via GitHub Actions, and deployed on GCP.",
+    keystat: "40-Phase Enterprise Architecture",
     emoji: "🌐",
     categories: ["systems"],
     tags: [
@@ -32,8 +32,12 @@ export const PROJECTS: Project[] = [
       "React",
       "PostgreSQL",
       "Redis",
+      "Celery",
+      "WebSockets",
+      "OpenTelemetry",
+      "Grafana",
       "Docker",
-      "Grafana"
+      "GCP"
     ],
     links: {
       github: "https://github.com/badnikhil/the-todo",
