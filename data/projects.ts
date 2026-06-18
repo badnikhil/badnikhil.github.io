@@ -19,6 +19,29 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    id: "the-todo",
+    name: "The Todo",
+    subtitle: "Enterprise Microservice Architecture",
+    description:
+      "An enterprise-grade, distributed microservice architecture featuring complete OpenTelemetry observability, Redis caching, and an SSL-secured Nginx reverse proxy on a Google Cloud ARM VM.",
+    keystat: "Complete Observability Stack",
+    emoji: "🌐",
+    categories: ["systems"],
+    tags: [
+      "FastAPI",
+      "React",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Grafana"
+    ],
+    links: {
+      github: "https://github.com/badnikhil/the-todo",
+      live: "https://the-todo.duckdns.org/",
+    },
+    featured: true,
+  },
+  {
     id: "gsoc-apidash",
     name: "GSoC 2026 — API Dash",
     subtitle: "Google Summer of Code · foss42/apidash",
