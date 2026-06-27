@@ -125,7 +125,7 @@ export default function About() {
               </div>
               <div className="p-5">
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Custom OS from BIOS to UEFI. CUDA kernels at 93% cuBLAS.
+                  Custom OS from BIOS to UEFI. CUDA kernels outperforming cuBLAS.
                   bindbc-cuda creator.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">

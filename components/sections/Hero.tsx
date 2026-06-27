@@ -87,8 +87,8 @@ export default function Hero() {
                   <span className="text-systems">[+]</span> Found 1 active
                   contributor for GSoC 2026 (API Dash).
                   <br />
-                  <span className="text-systems">[+]</span> Throughput optimized
-                  to 93% cuBLAS.
+                  <span className="text-systems">[+]</span> CUDA kernels outperforming
+                  cuBLAS on Ampere architectures.
                 </div>
               </motion.div>
 
@@ -104,7 +104,7 @@ export default function Hero() {
                   <span className="text-text-primary">cat mission.log</span>
                 </p>
                 <p className="mt-3 text-text-secondary sm:text-lg">
-                  I count bits to save a clock. I{" "}
+                  I{" "}
                   <Typewriter phrases={TYPEWRITER_PHRASES} />
                 </p>
               </motion.div>
