@@ -75,8 +75,8 @@ export const PROJECTS: Project[] = [
     name: "CAMM",
     subtitle: "CUDA Accelerated Matrix Multiplication",
     description:
-      "Five kernel implementations from naive to register-level tiling with size-specialized variants. Coalesced memory access, shared memory tiles, vectorized loads, warp-level and register-level optimizations.",
-    keystat: "93% of NVIDIA cuBLAS throughput",
+      "Nine kernel implementations ranging from naive to autotuned double-buffered register tiling with vectorization. Features auto-dispatch for arbitrary shapes (M, N, K) and outperforms cuBLAS on mid-to-large square sizes.",
+    keystat: "Outperforms NVIDIA cuBLAS",
     emoji: "🚀",
     categories: ["gpu", "systems"],
     tags: ["CUDA", "C++", "GPU", "cuBLAS", "Performance", "Register Tiling"],
