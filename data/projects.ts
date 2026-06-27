@@ -105,7 +105,7 @@ export const PROJECTS: Project[] = [
     name: "Johar Basket",
     subtitle: "Production E-commerce App · Play Store",
     description:
-      "Full-scale mobile commerce platform with product browsing, cart, orders, and delivery flows. GetX state management, offline-first delivery partner app, 40% faster load times via lazy loading and pagination.",
+      "Full-scale production e-commerce platform handling active users. Designed scalable REST APIs and Flutter frontends, improving system throughput by 60% and cutting load times by 50% via aggressive lazy loading and DB query tuning.",
     keystat: "Live on Google Play Store · Real users",
     emoji: "🛒",
     categories: ["flutter"],

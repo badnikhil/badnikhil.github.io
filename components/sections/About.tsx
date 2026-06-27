@@ -75,7 +75,7 @@ export default function About() {
                 </span>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=badnikhil&show_icons=true&theme=dark&bg_color=0a0a0f&border_color=1e1e2e&title_color=00b4d8&icon_color=39ff14&text_color=8892a4&hide_border=true&include_all_commits=true"
+                  src="https://github-readme-stats-sigma-five.vercel.app/api?username=badnikhil&show_icons=true&theme=dark&bg_color=0a0a0f&border_color=1e1e2e&title_color=00b4d8&icon_color=39ff14&text_color=8892a4&hide_border=true&include_all_commits=true"
                   alt="GitHub Stats"
                   className="w-full max-w-md mt-6"
                 />
