@@ -17,12 +17,12 @@ export interface Language {
 export const SKILL_DOMAINS: SkillDomain[] = [
   {
     id:     'flutter',
-    emoji:  '📱',
-    title:  'Flutter & Mobile',
+    emoji:  '🌐',
+    title:  'Full Stack & Mobile',
     accent: 'flutter',
     skills: [
-      'Flutter', 'Dart', 'GetX', 'Provider', 'Riverpod',
-      'MVVM', 'REST APIs', 'Offline-first', 'Responsive UI', 'Widget Architecture',
+      'React / Next.js', 'Node.js', 'PostgreSQL', 'TypeScript', 'Flutter',
+      'REST APIs', 'System Design', 'Responsive UI', 'WebSockets', 'Tailwind CSS',
     ],
   },
   {
@@ -80,7 +80,7 @@ export const SKILL_DOMAINS: SkillDomain[] = [
 
 export const LANGUAGES: Language[] = [
   { name: 'C / C++',     level: 12, label: 'Expert — OS, CUDA, kernels' },
-  { name: 'Dart',        level: 12, label: 'Expert — Flutter, CLI, GSoC' },
+  { name: 'TS / Dart',   level: 12, label: 'Expert — Full Stack, CLI, GSoC' },
   { name: 'CUDA',        level: 9,  label: 'Advanced — Outperforms cuBLAS' },
   { name: 'Assembly',    level: 8,  label: 'Advanced — x86-64, OS bootloader' },
   { name: 'D Language',  level: 5,  label: 'Intermediate — bindbc-cuda, dcompute' },

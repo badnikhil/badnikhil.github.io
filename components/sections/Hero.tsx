@@ -46,7 +46,7 @@ export default function Hero() {
                 |SYSTEMS ENGINEER|
                 <br />
                 0x00007FFA 46 4C 55 54 54 45 52 20 44 45 56 45 4C 4F 50 45
-                |FLUTTER DEVELOPE|
+                |FULL STACK DEVEL|
               </div>
 
               {/* Command 1: whoami */}

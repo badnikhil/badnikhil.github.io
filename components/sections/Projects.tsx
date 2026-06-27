@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const filters = [
   { label: "All", value: "all" as const },
-  { label: "Flutter", value: "flutter" as const },
+  { label: "Full Stack", value: "flutter" as const },
   { label: "Systems", value: "systems" as const },
   { label: "GPU / CUDA", value: "gpu" as const },
   { label: "Open Source", value: "opensource" as const },

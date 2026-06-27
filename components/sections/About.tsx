@@ -41,7 +41,7 @@ export default function About() {
                   <span className="text-systems font-bold">{">"}</span> I live
                   in two worlds:{" "}
                   <span className="text-flutter font-medium bg-flutter/10 px-1">
-                    Flutter for production mobile
+                    Full Stack for scalable platforms
                   </span>
                   , and{" "}
                   <span className="text-systems font-medium bg-systems/10 px-1">
@@ -94,16 +94,16 @@ export default function About() {
               <div className="border-b border-border-subtle bg-bg-raised px-4 py-2 flex justify-between items-center">
                 <span className="text-xs text-text-muted">PID: 1024</span>
                 <span className="text-xs text-flutter font-semibold uppercase tracking-wider">
-                  UI_THREAD
+                  WEB_&_MOBILE
                 </span>
               </div>
               <div className="p-5">
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Production apps on Play Store. GSoC 2026. API Dash
+                  Full stack web & mobile platforms. GSoC 2026. API Dash
                   contributions. Real users, real scale.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {["Flutter", "Dart", "GetX", "REST API"].map((t) => (
+                  {["Full Stack", "React/Next.js", "Node", "Flutter"].map((t) => (
                     <Badge
                       key={t}
                       label={t}

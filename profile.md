@@ -30,7 +30,7 @@ I don't chase trends. I use what works.
 * **The Old Guard:** `C`, `C++`, `x86-64 Assembly`. (Where the real work happens).
 * **The Compute:** `CUDA`. (If you aren't thinking in warps and shared memory tiles, you're just heating up the room).
 * **The Challengers:** `D Language`. (`C++` needed to learn some manners).
-* **The Day Job:** `Flutter / Dart`. (Because shipping Extremely Optimized e-commerce apps at Johar Basket and building production infra as CTO at Doordripp pays the bills).
+* **The Day Job:** `Full Stack / Web & Mobile`. (Because engineering scalable full-stack platforms, shipping optimized e-commerce apps at Johar Basket, and building production infra as CTO at Doordripp pays the bills).
 
 ---
 

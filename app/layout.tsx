@@ -18,16 +18,16 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Nikhil Ludder — @badnikhil',
   description:
-    'i count bits to save a clock. Flutter Engineer, Systems Programmer & GSoC 2026 Contributor. Building production apps, CUDA kernels, and operating systems from scratch.',
+    'i count bits to save a clock. Full Stack Developer, Systems Programmer & GSoC 2026 Contributor. Building scalable web platforms, CUDA kernels, and operating systems from scratch.',
   keywords: [
     'Nikhil Ludder',
     'badnikhil',
-    'Flutter Developer',
+    'Full Stack Developer',
     'CUDA',
     'Systems Programming',
     'GSoC 2026',
     'API Dash',
-    'Flutter Engineer',
+    'Full Stack Engineer',
     'Open Source',
     'bindbc-cuda',
     'MyOS',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Nikhil Ludder', url: 'https://github.com/badnikhil' }],
   openGraph: {
     title: 'Nikhil Ludder — @badnikhil',
-    description: 'i count bits to save a clock. Flutter Engineer & Systems Programmer.',
+    description: 'i count bits to save a clock. Full Stack Developer & Systems Programmer.',
     url: 'https://badnikhil.github.io',
     siteName: 'badnikhil',
     type: 'website',

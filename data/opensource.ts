@@ -90,7 +90,7 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
       },
     ],
     accent: "flutter",
-    tags: ["Flutter", "Dart", "Open Source", "GSoC 2026"],
+    tags: ["Full Stack", "TypeScript", "Open Source", "GSoC 2026"],
     badge: "GSoC 2026",
   },
   {

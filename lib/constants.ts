@@ -20,7 +20,7 @@ export const NAV_ITEMS = [
 ];
 
 export const TYPEWRITER_PHRASES = [
-  "build Flutter apps .",
+  "build full-stack platforms.",
   "write CUDA kernels faster than cuBLAS.",
   "build operating systems from scratch.",
   "count bits to save a clock.",
