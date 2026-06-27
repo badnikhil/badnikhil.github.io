@@ -81,7 +81,7 @@ export const SKILL_DOMAINS: SkillDomain[] = [
 export const LANGUAGES: Language[] = [
   { name: 'C / C++',     level: 12, label: 'Expert — OS, CUDA, kernels' },
   { name: 'Dart',        level: 12, label: 'Expert — Flutter, CLI, GSoC' },
-  { name: 'CUDA',        level: 9,  label: 'Advanced — 93% cuBLAS throughput' },
+  { name: 'CUDA',        level: 9,  label: 'Advanced — Outperforms cuBLAS' },
   { name: 'Assembly',    level: 8,  label: 'Advanced — x86-64, OS bootloader' },
   { name: 'D Language',  level: 5,  label: 'Intermediate — bindbc-cuda, dcompute' },
 ]
