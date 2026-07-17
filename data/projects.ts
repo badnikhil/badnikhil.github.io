@@ -46,6 +46,29 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
+    id: "collab",
+    name: "Collab",
+    subtitle: "Real-time Collaborative Kanban · OT + CRDT in Go",
+    description:
+      "An offline-first collaborative planning board built entirely in Go — real-time multiplayer kanban with a Google-Docs-style collaborative editor inside every card. Both sync engines — Operational Transformation and a from-scratch RGA CRDT — are hand-implemented and fuzz-verified, and the browser client is Go compiled to WebAssembly. A single event-loop hub owns all document state, with no mutexes on the hot path.",
+    keystat: "OT + CRDT sync engines from scratch",
+    emoji: "🔄",
+    categories: ["systems"],
+    tags: [
+      "Go",
+      "WebAssembly",
+      "CRDT",
+      "Operational Transformation",
+      "WebSockets",
+      "SQLite",
+      "Offline-first",
+    ],
+    links: {
+      github: "https://github.com/badnikhil/collab",
+    },
+    featured: true,
+  },
+  {
     id: "gsoc-apidash",
     name: "GSoC 2026 — API Dash",
     subtitle: "Google Summer of Code · foss42/apidash",
@@ -55,8 +78,8 @@ export const PROJECTS: Project[] = [
     emoji: "⚡",
     categories: ["flutter", "opensource"],
     tags: [
-      "Flutter",
-      "Dart",
+      "Full Stack",
+      "TypeScript",
       "GSoC",
       "CLI",
       "WebSocket",
@@ -105,11 +128,11 @@ export const PROJECTS: Project[] = [
     name: "Johar Basket",
     subtitle: "Production E-commerce App · Play Store",
     description:
-      "Full-scale production e-commerce platform handling active users. Designed scalable REST APIs and Flutter frontends, improving system throughput by 60% and cutting load times by 50% via aggressive lazy loading and DB query tuning.",
+      "Full-scale production e-commerce platform handling active users. Designed scalable REST APIs and full-stack frontends, improving system throughput by 60% and cutting load times by 50% via aggressive lazy loading and DB query tuning.",
     keystat: "Live on Google Play Store · Real users",
     emoji: "🛒",
     categories: ["flutter"],
-    tags: ["Flutter", "Dart", "GetX", "REST API", "Offline-first", "MVVM"],
+    tags: ["Full Stack", "React", "Node.js", "REST API", "Offline-first", "System Design"],
     links: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.joharbasket.app",

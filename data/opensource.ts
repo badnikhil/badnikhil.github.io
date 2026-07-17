@@ -33,14 +33,14 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     prs: [
       {
         number: 5140,
-        title: "Fix DCompute AST traversal and implement native PTX embedding",
-        stats: "Open",
+        title: "Implement native device code embedding for DCompute (PTX & SPIR-V)",
+        stats: "Merged",
         url: "https://github.com/ldc-developers/ldc/pull/5140",
       },
       {
         number: 5142,
-        title: "Skip host-side template instantiations during semantic analysis",
-        stats: "Open",
+        title: "Skip host-side template instantiations during DCompute semantic analysis",
+        stats: "Merged",
         url: "https://github.com/ldc-developers/ldc/pull/5142",
       },
       {
@@ -48,6 +48,18 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
         title: "Fix semantic compiler crash on indirect calls",
         stats: "Merged",
         url: "https://github.com/ldc-developers/ldc/pull/5143",
+      },
+      {
+        number: 5149,
+        title: "Emit array comparison/equality hooks for device code",
+        stats: "Merged",
+        url: "https://github.com/ldc-developers/ldc/pull/5149",
+      },
+      {
+        number: 5156,
+        title: "DCompute: Inline memcmp for device array equality",
+        stats: "Merged",
+        url: "https://github.com/ldc-developers/ldc/pull/5156",
       }
     ],
     accent: "systems",
@@ -65,28 +77,16 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
       "Multiple large PRs spanning core architecture refactoring, CLI implementation, multi-value parameter support, WebSockets, pure-Dart decoupling, and model migrations. Also selected as GSoC 2026 contributor.",
     prs: [
       {
-        number: 1660,
-        title: "PoC : Apidash CLI implementation",
-        stats: "Open",
-        url: "https://github.com/foss42/apidash/pull/1660",
-      },
-      {
-        number: 1694,
-        title: "Ws (WebSockets Support)",
-        stats: "Open",
-        url: "https://github.com/foss42/apidash/pull/1694",
-      },
-      {
-        number: 1692,
-        title: "Requestmodel refactor",
-        stats: "Open",
-        url: "https://github.com/foss42/apidash/pull/1692",
-      },
-      {
         number: 1678,
-        title: "sniff magic bytes for correct previewer",
-        stats: "Open",
+        title: "Sniff magic bytes to select the correct response previewer",
+        stats: "Merged",
         url: "https://github.com/foss42/apidash/pull/1678",
+      },
+      {
+        number: 1644,
+        title: "Migrate models to freezed v3",
+        stats: "Merged",
+        url: "https://github.com/foss42/apidash/pull/1644",
       },
     ],
     accent: "flutter",
@@ -127,16 +127,16 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
         url: "https://github.com/libmir/dcompute/pull/96",
       },
       {
-        number: 101,
-        title: "Add UnifiedBuffer!T for CUDA Unified Memory",
+        number: 94,
+        title: "Add UnifiedBuffer!T for CUDA Unified Memory (Managed Memory)",
         stats: "Merged",
-        url: "https://github.com/libmir/dcompute/pull/101",
+        url: "https://github.com/libmir/dcompute/pull/94",
       },
       {
-        number: 102,
+        number: 98,
         title: "Kernel embeddings",
         stats: "Merged",
-        url: "https://github.com/libmir/dcompute/pull/102",
+        url: "https://github.com/libmir/dcompute/pull/98",
       }
     ]
   },
@@ -150,14 +150,40 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     description: "Contributed fixes to the D standard library.",
     prs: [
       {
-        number: 8900,
+        number: 11012,
         title: "fixed some typos",
         stats: "Merged",
-        url: "https://github.com/dlang/phobos/pull/8900",
+        url: "https://github.com/dlang/phobos/pull/11012",
       }
     ],
     accent: "systems",
     tags: ["D Language", "Standard Library", "Documentation"],
+  },
+  {
+    id: "foss42-api",
+    emoji: "🔌",
+    org: "foss42",
+    repo: "api",
+    repoUrl: "https://github.com/foss42/api",
+    headline: "First-party WebSocket test endpoints for the API Dash suite",
+    description:
+      "Built server-side WebSocket endpoints in API Dash's open-source test API so the client could ship WS support with first-party test coverage instead of relying on third-party echo servers — an echo endpoint plus a ticker feed, token-gated auth, broadcast fan-out, and close-code verification, all covered by pytest.",
+    accent: "flutter",
+    tags: ["WebSocket", "Python", "Testing", "API", "Open Source"],
+    prs: [
+      {
+        number: 89,
+        title: "Add WebSocket echo endpoint for testing",
+        stats: "Merged",
+        url: "https://github.com/foss42/api/pull/89",
+      },
+      {
+        number: 92,
+        title: "WS endpoints (ticker, auth, broadcast, close-code)",
+        stats: "Merged",
+        url: "https://github.com/foss42/api/pull/92",
+      },
+    ],
   },
   {
     id: "awesome-os",
@@ -169,10 +195,10 @@ export const OS_CONTRIBUTIONS: OSContribution[] = [
     description: "Contributed to the awesome-os repository by adding my custom operating system project.",
     prs: [
       {
-        number: 400,
+        number: 119,
         title: "Added myOS",
         stats: "Merged",
-        url: "https://github.com/jubalh/awesome-os/pull/400",
+        url: "https://github.com/jubalh/awesome-os/pull/119",
       }
     ],
     accent: "systems",

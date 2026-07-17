@@ -20,6 +20,15 @@ export const ACHIEVEMENTS: Achievement[] = [
     color:       'purple',
   },
   {
+    id:          'claude-oss',
+    emoji:       '✳️',
+    title:       'Claude for Open Source Program',
+    subtitle:    'Anthropic · Max 20x',
+    description: 'Selected by Anthropic for the Claude for Open Source Program — awarded Claude Max 20x free for 6 months in recognition of open-source maintenance and contributions. "Open-source maintainers and contributors like you keep the ecosystem running."',
+    date:        'Jul 2026',
+    color:       'gold',
+  },
+  {
     id:          'trc',
     emoji:       '🔬',
     title:       'Google TPU Research Cloud',
